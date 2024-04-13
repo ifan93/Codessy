@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded2"
+    android:backgroundTint="@color/dark2Purple"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        tools:text="Delete account warning"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_mono"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto_mono"
+        tools:text="Are you sure you want to delete your account? This action cannot be undone."
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:padding="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="10dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/positiveBtn"
+            tools:text="yes"
+            android:layout_marginHorizontal="20dp"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:fontFamily="@font/roboto_mono"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/negativeBtn"
+            android:layout_marginHorizontal="20dp"
+            tools:text="no"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/roboto_mono"
+            />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

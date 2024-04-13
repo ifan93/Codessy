@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/dark2Purple"
+    android:orientation="vertical"
+    tools:context=".code.CodeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/bckBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/dark2Purple"
+            android:contentDescription="back_button_description"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/codeSnipTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/roboto_mono"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="String 7/20" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        tools:progress="40"
+        app:indicatorColor="#8903FF"
+        android:id="@+id/questionProgress"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                >
+
+                <ImageButton
+                    android:id="@+id/prevBtn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:src="@drawable/baseline_keyboard_double_arrow_left_24"
+                    android:background="@null"
+                    android:contentDescription="next_button_description"
+                    android:fontFamily="@font/roboto_mono"
+                    />
+
+                <ImageButton
+                    android:id="@+id/nxtBtn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/baseline_keyboard_double_arrow_right_24"
+                    android:background="@null"
+                    android:contentDescription="next_button_description"
+                    android:fontFamily="@font/roboto_mono"
+                    />
+                <Button
+                    android:id="@+id/finishButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_mono"
+                    android:text="Finish"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded2"
+                android:backgroundTint="#8124D3"
+                >
+
+                <TextView
+                    android:id="@+id/codeSnippet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/roboto_mono"
+
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"/>
+
+
+
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/copyButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Copy"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/roboto_mono"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded2"
+                android:backgroundTint="#8124D3"
+                android:layout_marginTop="10dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/codeSnippet2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/roboto_mono"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    tools:text="// Java program demonstrating the usage of a for loop\n\n\t// Define a class named ForLoopExample\nclass ForLoopExample {\n\tpublic static void main(String[] args)\n {\n\n\t\t\t// Printing numbers from 1 to maxValue using a for loop\n\t\t\tint maxValue = 10;\n\t\t\tSystem.out.println(&quot;Printing numbers from 1 to &quot; + maxValue + &quot; using a for loop:&quot;);\n\n\t\t\t// Start of the for loop\n\t\t\tfor (int i = 1; i &lt;= maxValue; i++) {\n\t\t\t\t// Display the current value of the loop variable\n\t\t\t\tSystem.out.println(&quot;Number: &quot; + i);\n\t\t\t}\n\t\t\t// End of the for loop\n\n\t\t\t// Display a message after exiting the loop\n\t\t\tSystem.out.println(&quot;End of loop execution.&quot;);\n\t\t}\n\t}" />
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/copyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Copy"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="3dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A0867"
+    android:orientation="vertical"
+    android:id="@+id/profileContainer"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Add a TextView with speakable text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple"
+            android:fontFamily="@font/roboto_mono"
+            android:padding="16dp"
+            android:id="@+id/bio"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/settingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:contentDescription="setting"
+            android:src="@drawable/baseline_settings_24"
+            app:tint="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </ImageButton>
+
+        <!-- Add other views or content here -->
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/lay"
+        tools:layout_editor_absoluteY="102dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileP"
+                android:layout_width="177dp"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/man"
+                android:layout_marginBottom="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- ImageView and TextView combination -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tVbio"
+                        tools:text="imcoding and many thn"
+                        android:textSize="14sp"
+                        android:maxLines="3"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/roboto_mono"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_mono"
+                android:paddingLeft="10dp"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_back_white"
+                android:backgroundTint="#571193"
+                android:orientation="vertical"
+
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tVuserNameP"
+                    android:fontFamily="@font/roboto_mono"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:text="Micheal olise">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_mono"
+                android:paddingLeft="10dp"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_back_white"
+                android:backgroundTint="#571193"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tVUserEmail"
+                    android:fontFamily="@font/roboto_mono"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:text="Molise@gmail.com">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progressBarP"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            app:indicatorSize="150dp"
+            app:trackCornerRadius="10dp"
+            app:trackThickness="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/g"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_mono"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="loading" />
+    </RelativeLayout>
+
+
+</LinearLayout>

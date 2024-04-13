@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A0867"
+    android:orientation="vertical"
+    tools:context=".Setting">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:orientation="horizontal">
+
+        <!-- Add a TextView with speakable text -->
+
+        <TextView
+            android:id="@+id/Profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:fontFamily="@font/roboto_mono"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Setting"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginStart="2dp"
+            android:contentDescription="setting"
+            android:src="@drawable/baseline_arrow_back_24"
+            app:tint="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <!-- Add other views or content here -->
+
+    </RelativeLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePic"
+                android:layout_width="177dp"
+                android:layout_height="155dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/man" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_mono"
+                android:paddingStart="10dp"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_back_white"
+                android:backgroundTint="#571193"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/editUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@null"
+                    android:fontFamily="@font/roboto_mono"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:maxLength="30"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    tools:text="Micheal olise">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_mono"
+                android:paddingLeft="10dp"
+                android:text="Bio"
+                android:textColor="@color/white"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_back_white"
+                android:backgroundTint="#571193"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/edBio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:background="@null"
+                    android:fontFamily="@font/roboto_mono"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:justificationMode="inter_word"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:gravity="start|top"
+                    android:hint="@string/talk_about_you"
+                    android:maxLines="5"
+                    android:maxLength="50"
+                    tools:text="im  eager to learn about coding and many thn"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_mono"
+                android:paddingLeft="10dp"
+                android:text="Email"
+
+                android:textColor="@color/white"
+                android:textSize="15sp">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/round_back_white"
+                android:backgroundTint="#571193"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/edEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:fontFamily="@font/roboto_mono"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:maxLength="30"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:text="Molise@gmail.com">
+
+                </EditText>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/baseline_lock_24"
+                    android:layout_marginLeft="170dp"
+                    android:layout_gravity="center_vertical"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/svBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/roboto_mono"
+                    android:text="Save"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/lgOtBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/roboto_mono"
+                    android:text="Log out"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:paddingStart="10dp"
+                android:text="danger zone"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"
+                android:textColor="@color/red"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/deleteBTn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/roboto_mono"
+                    android:text="Delete account"
+                    android:textSize="24sp"
+                    android:backgroundTint="@null"
+                    android:background="@drawable/button_back"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:paddingStart="10dp"
+                android:text="got questions?"
+                android:textAllCaps="true"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/faqBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/roboto_mono"
+                    android:text="faq"
+                    android:textAllCaps="true"
+                    android:paddingHorizontal="5dp"
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/purple"
+
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

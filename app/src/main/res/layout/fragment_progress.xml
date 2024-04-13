@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark2Purple"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <!-- Progress TextView -->
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Add other views or content here -->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:fontFamily="@font/roboto_mono"
+        android:padding="16dp"
+        android:text="user manual"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <!-- ScrollView starts after the Progress TextView -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="19dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+
+                android:text="Welcome to the Codessy user manual, your comprehensive guide to navigating and maximizing your experience with our platform. Whether you're a beginner exploring the basics or an advanced user seeking to delve deeper into our features, this manual will provide you with the necessary information to make the most out of Codessy.
+
+"
+                android:justificationMode="inter_word"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/purple">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="Login and register"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="1. Register as new user"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imageLog"
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="2. Log in"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/Home"
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_2" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:text="3. sucessfull signed in will be redirected to Home page"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/orange">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="Learn section"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/l"
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_3" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="click the higlighted red  circle to go learn section"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/o"
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_4" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="Learn section"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/orange">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="Code section"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_7" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="click the higlighted red circle to go code section"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_8" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="Code"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/orange">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="Quiz section"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_5" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="click the higlighted red circle to go quiz section"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_6" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="Quiz"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/orange">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="edit profile"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_9" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="1. go to profile"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_11" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="2. profile"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_12" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="3. click setting icon"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_13" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="4. can edit username, user bio and user profile picture"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="Code"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/orange">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/purple"
+
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="FAQ"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_14" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="click the higlighted red circle to go to faq page"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="222dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_13" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/roboto_mono"
+                android:gravity="center"
+                android:text="click the higlighted red circle to go to faq page"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

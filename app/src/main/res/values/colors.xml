@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#FF00FF00</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="popel">#9F4BFF</color>
+    <color name="yellow">#FFFFFF00</color>
+    <color name="cyan">#FF00FFFF</color>
+    <color name="magenta">#FFFF00FF</color>
+    <color name="light_purple">#6016AA</color>
+    <color name="orange">#FFFFA500</color>
+    <color name="purple">#7A00E4</color>
+    <color name="pink">#FFFFC0CB</color>
+    <color name="gray">#FF808080</color>
+    <color name="dark_gray">#777676</color>
+    <color name="darkPurple">#54009E</color>
+    <color name="dark2Purple">#3A0867</color>
+    <color name="light_gray">#888585</color>
+    <color name="brown">#FFA52A2A</color>
+    <color name="maroon">#FF800000</color>
+    <color name="navy">#FF000080</color>
+    <color name="teal">#FF008080</color>
+    <color name="olive">#FF808000</color>
+    <color name="lime">#FF00FF00</color>
+    <color name="aqua">#FF00FFFF</color>
+    <color name="silver">#FFC0C0C0</color>
+    <color name="gold">#FFFFD700</color>
+    <color name="indigo">#FF4B0082</color>
+    <color name="violet">#FF8A2BE2</color>
+    <color name="turquoise">#FF40E0D0</color>
+    <color name="salmon">#FFFA8072</color>
+    <color name="sky_blue">#FF87CEEB</color>
+    <color name="lavender">#FFE6E6FA</color>
+    <color name="coral">#FFFF7F50</color>
+    <color name="khaki">#FFF0E68C</color>
+    <color name="orchid">#FFDA70D6</color>
+    <color name="thistle">#FFD8BFD8</color>
+    <color name="firebrick">#FFB22222</color>
+
+
+
+</resources>

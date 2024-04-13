@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/dark2Purple">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Codessy"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:fontFamily="@font/roboto_mono"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login to continue your Java learning journey"
+        android:textSize="20sp"
+        android:justificationMode="inter_word"
+        android:fontFamily="@font/roboto_mono"
+        android:textColor="@color/white"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="50dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/darkPurple"
+        android:layout_marginHorizontal="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_marginStart="5dp"
+
+           >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_mono"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/uEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded2"
+                    android:fontFamily="@font/roboto_mono"
+                    android:inputType="textEmailAddress"
+                    android:minHeight="48dp"
+                    android:maxLength="40"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:text="micheal Olise" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="19dp"
+                    android:src="@drawable/baseline_email_24" />
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Password"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_mono"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/uPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded2"
+                    android:fontFamily="@font/roboto_mono"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:maxLength="50"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:text="micheal Olise" />
+
+                <ImageButton
+                    android:id="@+id/visibleP"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:contentDescription="visible"
+                    android:src="@drawable/baseline_visibility_off_24" />
+
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginBtn"
+                android:text="login"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_mono"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSignUp1"
+                android:text="Don't have an account? Sign up"
+                android:fontFamily="@font/roboto_mono"
+                android:textSize="18sp"
+                android:justificationMode="inter_word"
+                android:textColor="@color/white"
+                android:layout_marginVertical="10dp"
+                android:textColorHighlight="@color/darkPurple"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/dark2Purple"
+    android:orientation="vertical"
+    tools:context=".quiz.QuizActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/bckBtn"
+            android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="back_button_description"
+            android:background="@color/dark2Purple"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_mono"
+            tools:text="String 7/20"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:id="@+id/topicIndicator"/>
+
+
+    </RelativeLayout>
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        tools:progress="40"
+        app:indicatorColor="#8903FF"
+        android:id="@+id/questionProgress"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded2"
+                android:backgroundTint="#8124D3"
+                >
+
+                <TextView
+                    android:id="@+id/content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="-1dp"
+                    android:layout_marginBottom="7dp"
+                    android:fontFamily="@font/roboto_mono"
+                    android:justificationMode="inter_word"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"
+                    tools:text="Lesson 1: Understanding Variables\n\nVariables in programming are containers for storing data values.\n\nIn Java, variables have a data type, which specifies what kind of data it can hold.\n\nFor example, int is a data type for storing integers, and String is a data type for storing text.\n\nVariables are declared by specifying the data type, followed by the variable name.\n\nFor example, int age; declares a variable named age of type int.\n\nVariables can also be initialized with a value when declared.\n\nFor example, int age = 25; declares a variable named age of type int and initializes it with the value 25.\n\nVariables can be used to store different types of data, such as numbers, text, and boolean values.\n\nUnderstanding how to use variables is fundamental to writing Java programs." />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded2"
+                android:layout_marginVertical="10dp"
+                android:backgroundTint="#8124D3"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/content2"
+                    android:textColor="@color/white"
+                    android:justificationMode="inter_word"
+                    android:fontFamily="@font/roboto_mono"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp"
+                    tools:text="Lesson 1: Understanding Variables\n\nVariables in programming are containers for storing data values.\n\nIn Java, variables have a data type, which specifies what kind of data it can hold.\n\nFor example, int is a data type for storing integers, and String is a data type for storing text.\n\nVariables are declared by specifying the data type, followed by the variable name.\n\nFor example, int age; declares a variable named age of type int.\n\nVariables can also be initialized with a value when declared.\n\nFor example, int age = 25; declares a variable named age of type int and initializes it with the value 25.\n\nVariables can be used to store different types of data, such as numbers, text, and boolean values.\n\nUnderstanding how to use variables is fundamental to writing Java programs." />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded2"
+                android:backgroundTint="#8124D3"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/roboto_mono"
+                    android:justificationMode="inter_word"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"
+
+                    tools:text="Lesson 1: Understanding Variables\n\nVariables in programming are containers for storing data values.\n\nIn Java, variables have a data type, which specifies what kind of data it can hold.\n\nFor example, int is a data type for storing integers, and String is a data type for storing text.\n\nVariables are declared by specifying the data type, followed by the variable name.\n\nFor example, int age; declares a variable named age of type int.\n\nVariables can also be initialized with a value when declared.\n\nFor example, int age = 25; declares a variable named age of type int and initializes it with the value 25.\n\nVariables can be used to store different types of data, such as numbers, text, and boolean values.\n\nUnderstanding how to use variables is fundamental to writing Java programs." />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded2"
+                android:backgroundTint="#8124D3"
+                android:layout_marginVertical="10dp"
+                tools:ignore="ExtraText">
+
+                <TextView
+                    android:id="@+id/content4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:fontFamily="@font/roboto_mono"
+                    android:justificationMode="inter_word"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="@color/white"
+
+                    tools:text="Lesson 1: Understanding Variables\n\nVariables in programming are containers for storing data values.\n\nIn Java, variables have a data type, which specifies what kind of data it can hold.\n\nFor example, int is a data type for storing integers, and String is a data type for storing text.\n\nVariables are declared by specifying the data type, followed by the variable name.\n\nFor example, int age; declares a variable named age of type int.\n\nVariables can also be initialized with a value when declared.\n\nFor example, int age = 25; declares a variable named age of type int and initializes it with the value 25.\n\nVariables can be used to store different types of data, such as numbers, text, and boolean values.\n\nUnderstanding how to use variables is fundamental to writing Java programs." />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
+                >
+
+                <Button
+                    android:layout_width="116dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/prevBtn"
+                    android:fontFamily="@font/roboto_mono"
+                    android:contentDescription="prev_button_description"
+                    android:text="previous"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:id="@+id/nxtBtn"
+                    android:fontFamily="@font/roboto_mono"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="next_button_description"
+                    android:text="Next"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

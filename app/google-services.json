@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1007898282143",
+    "firebase_url": "https://codessy-91402-default-rtdb.firebaseio.com",
+    "project_id": "codessy-91402",
+    "storage_bucket": "codessy-91402.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007898282143:android:fbc3b4a7faa2760277baaa",
+        "android_client_info": {
+          "package_name": "com.example.codessy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhfdlBtkEkEhXDUxf7RjhCTslYkouG2oI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

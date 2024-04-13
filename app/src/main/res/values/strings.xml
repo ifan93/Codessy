@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Codessy</string>
+    <string name="Home">Home</string>
+    <string name="Progress">Progress</string>
+    <string name="Profile" />
+    <string name="home_fragment">home</string>
+    <string name="addBio">add bio</string>
+    <string name="next">Next</string>
+    <string name="talk_about_you">talk about you</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
